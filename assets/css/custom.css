@@ -1,0 +1,15 @@
+.mix > .item > img {
+    object-fit:scale-down;
+}
+
+.carousel-inner > .item > img {
+    object-fit:cover;
+}
+
+.team {
+    margin:0 auto;
+}
+
+.team-item-img >img {
+    object-fit: cover;
+}

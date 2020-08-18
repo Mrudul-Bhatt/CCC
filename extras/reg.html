@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+
+<head>
+		<!-- Meta Tag -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Registeration Form</title>
+		<meta name="description" content="CCC- Cloud">
+		<meta name="keywords" content="CCC-Cloud">
+		<meta name="author" "">
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- External CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		<link rel="stylesheet=" type="text/css" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet=" type="text/css" href="assets/css/YTPlayer.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/animated-headlines.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+		<!-- Color Switcher -->
+		<link href="assets/switcher/switcher.css" rel="stylesheet">
+		<link href="assets/switcher/style1.css" rel="stylesheet" id="colors">
+		<!-- Favicon -->
+		<link rel="icon" href="assets/images/header/favicon.png">
+		<link rel="apple-touch-icon" href="assets/img/template/apple-touch-icon.html">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/img/template/icon-72x72.html">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/img/template/icon-114x114.html">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+		<style type="text/css">
+		 .simple-form{
+						text-align:center;
+						margin:200px 0px 0px 550px;
+						}
+			#registration{
+							
+							background-color:#051019;
+							opacity: 0.8;
+							padding:50px 40px 40px 40px;
+							
+							
+						}
+			#header{
+					background-color:#051019;
+							opacity: 0.8;
+					
+					}
+			#button{
+			        width:300px;
+					padding:5px;
+					border-radius:5px;
+					outline:0px;
+			        font-family: cursive
+					}
+			#drop{
+			      width:300px;
+				  padding:5px;
+				  border-radius:5px;
+			     
+			     }
+			#but{
+	            color: white;
+				font-size:18px;
+				font-family: cursive;
+			
+			
+				}
+			#rd{
+				/* margin-left:1px; */
+			
+				}
+			#register{
+					  width:150px;
+					padding:5px;
+					border-radius:5px;
+					outline:0px;
+					background-color:#0c6996;
+					border: 2px solid #01010c;
+					color: aliceblue;
+					font-size: 18px;
+					font-family:cursive;
+					opacity:1.0;
+					  }
+			#form{
+					
+			
+			
+			
+				}
+				
+			.reg{
+			
+					font-size:30px;
+					font-family: cursive;
+					border-bottom-style: ridge;
+					color: white;
+					}
+					  
+			.navbar-toggle {
+							border-radius: 0;
+							}
+
+			.navbar-default .navbar-toggle:hover {
+													border-color: #fff;
+												}
+
+			.navbar-default .navbar-toggle .icon-bar {
+														background-color: #ccc;
+														-webkit-transition: all .3s ease-in-out;
+														-moz-transition: all .3s ease-in-out;
+														-ms-transition: all .3s ease-in-out;
+														transition: all .3s ease-in-out;
+													}
+													.val_error{ color:#FF1F1F;}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+		</style>
+		
+		<script  type="text/javascript">  
+			  
+			function validate()
+			{
+				if(isNaN(myform.mobileno.value))
+				{
+					alert("INVALID PHONE NUMBER");
+					myform.mobileno.focus();
+					return false;
+				}
+				if((myform.mobileno.value).length<10)
+				{
+					alert("INVALID PHONE NUMBER");
+					myform.mobileno.focus();
+					return false;
+				}
+				
+				var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+				return true;
+			}
+		</script>  
+	
+	</head>
+	<body>
+		
+		
+
+			<div class="parallax" style="background-image:url(cloudstuff/core_blog1.jpg);background-repeat: no-repeat;width: 100%;height: 122%">
+			<!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<img src="logooo.svg" alt="" style="height: 50px; width: 50px;">
+				</div>
+				<div class="collapse navbar-collapse" id="main-nav-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a class="smoth-scroll" href="index.html#about-us">About</a></li>
+						<li><a class="smoth-scroll" href="index.html#our-portfolio">Works</a></li>
+						<li><a class="smoth-scroll" href="index.html#our-team">Team</a></li>
+						<li><a class="smoth-scroll" href="index.html#contacts">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- /End Navbar -->
+		<!-- Start Header -->
+		<div id="parallax"></div>
+	
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4" id="registration">
+					<br>
+						<center><b class="reg">REGISTRATION FORM</b></center>
+						
+							<form  name="myform" action= "database.py"  enctype="multipart/form-data"	onsubmit="return validate()" method="POST">
+						
+								<div class="form-group ">
+									<br>
+									<input type="text" name="name" class="form-controls" required pattern="[A-Z a-z]+"  id="button" placeholder="Enter your name" />
+									<br>
+									
+									<br>
+								</div>
+								<div class="form-group ">
+									<input type="text" name="studentno" class="form-controls" pattern="[0-9]{7}" required id="button" placeholder="Enter your student no." />
+									
+									<br>
+									<br>
+								</div>
+								<div class="form-group ">
+									<input type="email" name="email" class="form-controls"  required placeholder="Enter your email" id="button" />
+									
+									<br>
+									<br>
+								</div>
+								<div class="form-group ">
+									<input type="text" name="mobileno" class="form-controls" required id="button" placeholder="Enter your mobile number" />
+									
+									<br>
+									<br>
+								</div>	
+								<div class="form-group ">
+									<select id="drop"name="branch" class="form-controls" required><option value="" disabled selected>Select your branch</option><option>CSE</option><option>IT</option><option>ECE</option><option>ME</option><option>CE</option><option>EN</option><option>EI</option></select>
+									<br>
+									<br>
+								</div>
+								<div class="form-group ">
+									<select id="drop" name="year" class="form-controls" required><option disabled selected>Select your year</option><option>2nd year</option><option>1st year</option></select>
+									<br>
+									<br>
+								</div>
+								<div class="form-group">
+                                    <span id="but">HOSTELER:</span>&nbsp;&nbsp;&nbsp;<input type="radio" name="a" required value="yes" id="rd"/>&nbsp;&nbsp;&nbsp;<span id="but">YES</span>&nbsp;&nbsp;&nbsp;&nbsp;
+									<input type="radio" name="a" class="form-controls" required value="no" id="rd"/>&nbsp;&nbsp;&nbsp;<span id="but">NO</span>
+									<br>
+									
+								</div>
+							    <div class="col-xs-4 col-xs-offset-2">
+								<div class="form-group ">
+									<input type="submit" class="btn-btn-primary" name="submit" value="Register" id="register"/>
+								</div>
+								</div>
+							</form>
+					</div>
+				</div>
+			</div>		
+					
+						
+	
+		
+		<!-- jQuery js -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- BootStrap js -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- OwlCarousel Js  -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Wow js -->
+		<script src="assets/js/wow.min.js"></script>
+		<!-- Parallas Js-->
+		<script src="assets/js/jquery.stellar.min.js"></script>
+		<!-- Smooth Scroll Js -->
+		<script src="assets/js/SmoothScroll.js"></script>
+		<!-- Skill Easypiechart,Inview js -->
+		<script src="assets/js/jquery.easypiechart.min.js"></script>
+		<script src="assets/js/jquery.inview.min.js"></script>
+		<!-- animated headlines JS -->
+		<script src="assets/js/animated-headlines.js"></script>
+		<!-- Counterup, Waypoints Js -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/jquery.waypoints.min.js"></script>
+		<!-- Magnific Popup Js -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<!-- Mixitup Js -->
+		<script src="assets/js/jquery.mixitup.js"></script>
+		<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+		<!-- Color Switcher js -->
+		<script src="assets/switcher/switcher.js"></script>
+		<!-- Main Custom Js -->
+		<script src="assets/js/custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
